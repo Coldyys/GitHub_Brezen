@@ -17,8 +17,17 @@ namespace GitHub_Brezen
             //Zjistí nejmenší a největší číslo z dvojice
             int min = Math.Min(con1,con2);
             int max = Math.Max(con1,con2);
-            //Vypíše finální output
-            Console.WriteLine($"Čísla jsou vypsána od nejmenšího po největší: {min},{max}");
+
+            //Když podmínka platí, vypíše se output č.1
+            if (con1 == con2)
+            {
+                Console.WriteLine("Čísla jsou shodná");
+            }
+            //Když podmínka neplatí, vypíše se output č.2
+            else 
+            {
+                Console.WriteLine($"Čísla jsou vypsána od nejmenšího po největší: {min},{max}");
+            }
 
 
 
